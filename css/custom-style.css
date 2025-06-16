@@ -1,0 +1,73 @@
+/* 1. Font family */
+body {
+    font-family: 'quicksand', sans-serif;
+    background-color: #e3dbd2;
+    color: #282828;
+    line-height: 1.6;
+}
+
+/* 2. Font color for headers */
+h1, h2 {
+    color: #5c3d2e;
+}
+
+/* 3. Style a custom div block */
+.feature-box {
+    background-color: #d1c3b4;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border: 1px solid #a79b8c;
+}
+
+/* 4. Navigation anchor style */
+a {
+    color: #7a5032;
+    text-decoration: underline;
+}
+a:hover {
+    color: #b2754d;
+}
+
+.mood-generator {
+  text-align: center;
+  font-family: 'Georgia', serif;
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.mood-generator h1 {
+  color: #6b4c3b;
+  margin-bottom: 10px;
+}
+
+.mood-generator .btn {
+  background-color: #c1a57b;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.mood-generator .btn:hover {
+  background-color: #a98c68;
+}
+
+.mood-generator #mood-output {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ece5dc;
+}
+
+.mood-generator a {
+  color: #5b3b24;
+  text-decoration: underline;
+}

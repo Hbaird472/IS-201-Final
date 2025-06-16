@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heather's Piano Studio</title>
+  <link rel="stylesheet" href="css/custom-style.css" />
+
+  <style>
+    body {
+      background-color: #e8d7c3ee;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+      font-family: Georgia, serif;
+    }
+
+    header {
+      background-color: #baae9e;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      margin: 20px 0;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .section {
+      margin: 40px 0;
+    }
+
+    .anchor-link {
+      display: block;
+      margin-top: 100px;
+      padding-top: 20px;
+    }
+
+    .feature-box {
+      background-color: #f5f0ea;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Mood Generator Styles */
+    .mood-generator {
+      font-family: Georgia, serif;
+      background-color: #f8f4f0;
+      color: #3a3a3a;
+      text-align: center;
+      padding: 40px;
+      margin-top: 50px;
+    }
+
+    .mood-generator .container {
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .mood-generator h1 {
+      color: #6b4c3b;
+      margin-bottom: 10px;
+    }
+
+    #mood-output {
+      margin-top: 30px;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #ece5dc;
+    }
+
+    .btn {
+      background-color: #c1a57b;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #a98c68;
+    }
+
+    .mood-generator a {
+      color: #5b3b24;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Heather's Piano Studio</h1>
+    <p>Helping you achieve your musical goals one song at a time.</p>
+    <a href="#lesson-details">Skip to Lesson Details</a>
+  </header>
+
+  <div class="section">
+    <h2>Why Learn To Play The Piano?</h2>
+    <ol>
+      <li>It builds confidence
+        <ul>
+          <li>Through performances</li>
+          <li>Through mastering new songs</li>
+          <li>Through learning patience and discipline</li>
+        </ul>
+      </li>
+      <li>It enhances brain function
+        <ul>
+          <li>Improves memory</li>
+          <li>Develops multitasking skills</li>
+        </ul>
+      </li>
+      <li>It brings joy!
+        <ul>
+          <li>To the player</li>
+          <li>To their audience</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+
+  <div class="section video-container">
+    <h2>Watch a Performance</h2>
+    <iframe src="https://www.youtube.com/embed/EkBSc9uVUzM" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <div class="section anchor-link" id="lesson-details">
+    <h2>Lesson Information</h2>
+    <p>We offer 30-minute and 45-minute private lessons for students of all ages. Lessons include theory, technique, and fun musical games to keep students engaged.</p>
+  </div>
+
+  <div class="section">
+    <img src="assets/Keyboard.jpg" alt="Keyboard" />
+  </div>
+
+  <div class="feature-box">
+    <h2>Studio Philosophy</h2>
+    <p>Our approach balances structure and creativity, using games to help with active learning.</p>
+  </div>
+
+  <div class="feature-box">
+    <h2>Student Spotlights</h2>
+    <p>Each month we feature students who have made great progress.</p>
+  </div>
+
+  <div class="feature-box">
+    <h2>What You’ll Learn</h2>
+    <ul>
+      <li>Music theory (see below for an example)</li>
+      <li>Technique and articulation</li>
+      <li>Ear training and sight-reading</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Piano Classroom Theory Example</h2>
+    <iframe src="https://public.tableau.com/views/PianoClassroom/PianoClassroom?:showVizHome=no&:embed=true"
+            width="100%" height="800" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+<p><a href="mood-generator.html" target="_blank">🎶 Try the Musical Mood Generator</a></p>
+
+
+  <div class="section" style="text-align: center; margin-top: 50px;">
+    <a href="index.html" style="background-color: #b0a493; color: #000; padding: 10px 15px; text-decoration: none; border-radius: 5px;">
+      ← Go to Main Site
+    </a>
+  </div>
+
+</body>
+</html>

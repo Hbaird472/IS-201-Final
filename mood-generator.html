@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Musical Mood Generator</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background-color: #f8f4f0;
+      color: #3a3a3a;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .container {
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #6b4c3b;
+      margin-bottom: 10px;
+    }
+
+    #mood-output {
+      margin-top: 30px;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #ece5dc;
+    }
+
+    .btn {
+      background-color: #c1a57b;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #a98c68;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 40px;
+      background-color: #b0a493;
+      color: #000;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎶 Musical Mood Generator</h1>
+    <p>Click the button to receive a piano piece that matches your mood.</p>
+    <button class="btn" onclick="generateMood()">Get a Mood</button>
+    <div id="mood-output"></div>
+  </div>
+
+  <script>
+    const moods = [
+      {
+        mood: "Peaceful",
+        quote: "Peace comes from within. Do not seek it without. – Buddha",
+        piece: "Yiruma – River Flows in You",
+        link: "https://www.youtube.com/watch?v=7maJOI3QMu0"
+      },
+      {
+        mood: "Empowered",
+        quote: "She remembered who she was and the game changed. – Lalah Delia",
+        piece: "Beethoven – Sonata No. 8 (Pathétique)",
+        link: "https://www.youtube.com/watch?v=SrcOcKYQX3c"
+      },
+      {
+        mood: "Melancholic",
+        quote: "Tears come from the heart and not from the brain. – Leonardo da Vinci",
+        piece: "Chopin – Nocturne in C-sharp minor",
+        link: "https://www.youtube.com/watch?v=9E6b3swbnWg"
+      },
+      {
+        mood: "Hopeful",
+        quote: "Even the darkest night will end and the sun will rise. – Victor Hugo",
+        piece: "Debussy – Clair de Lune",
+        link: "https://www.youtube.com/watch?v=CvFH_6DNRCY"
+      },
+      {
+        mood: "Reflective",
+        quote: "The unexamined life is not worth living. – Socrates",
+        piece: "Erik Satie – Gymnopédie No. 1",
+        link: "https://www.youtube.com/watch?v=S-Xm7s9eGxU"
+      }
+    ];
+
+    function generateMood() {
+      const random = moods[Math.floor(Math.random() * moods.length)];
+      document.getElementById("mood-output").innerHTML = `
+        <h2>${random.mood}</h2>
+        <p><em>"${random.quote}"</em></p>
+        <p><strong>Suggested Piece:</strong> ${random.piece}</p>
+        <p><a href="${random.link}" target="_blank">🎵 Listen on YouTube</a></p>
+      `;
+    }
+  </script>
+
+  <a href="scratch.html">&larr; Return to Home Page</a>
+</body>
+</html>
